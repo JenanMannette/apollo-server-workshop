@@ -4,6 +4,7 @@
   "description": "A workshop designed to walk you through the basic concepts of GraphQL using Apollo Server.",
   "main": "server.js",
   "scripts": {
+    "dev": "nodemon server.js",
     "test": "test"
   },
   "repository": {
@@ -34,6 +35,7 @@
     "eslint-plugin-jest": "21.17.0",
     "eslint-plugin-jsx-a11y": "6.1.1",
     "eslint-plugin-react": "7.11.1",
-    "jest": "24.5.0"
+    "jest": "24.5.0",
+    "nodemon": "1.18.10"
   }
 }
