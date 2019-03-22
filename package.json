@@ -1,0 +1,39 @@
+{
+  "name": "apollo-server-workshop",
+  "version": "1.0.0",
+  "description": "A workshop designed to walk you through the basic concepts of GraphQL using Apollo Server.",
+  "main": "server.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goldenshun/apollo-server-workshop.git"
+  },
+  "keywords": [
+    "apollo",
+    "graphql",
+    "express"
+  ],
+  "author": "Sean Connolly",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/goldenshun/apollo-server-workshop/issues"
+  },
+  "homepage": "https://github.com/goldenshun/apollo-server-workshop#readme",
+  "dependencies": {
+    "apollo-server": "2.4.8",
+    "express": "4.16.4",
+    "graphql": "14.1.1"
+  },
+  "devDependencies": {
+    "cypress": "3.2.0",
+    "eslint": "5.5.0",
+    "eslint-config-airbnb": "17.1.0",
+    "eslint-plugin-import": "2.14.0",
+    "eslint-plugin-jest": "21.17.0",
+    "eslint-plugin-jsx-a11y": "6.1.1",
+    "eslint-plugin-react": "7.11.1",
+    "jest": "24.5.0"
+  }
+}
