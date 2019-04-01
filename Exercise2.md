@@ -3,9 +3,11 @@
 Goal: Add Apollo Server to our express server.
 
 Watch it fail:
-1. Run your server: `npm run dev`
-2. Run a simple Cypress test that executes a basic GraphQL query
-3. You should see a...
+1. In one terminal tab, run your server: `npm run dev`
+2. In another terminal tab, open the test runner: `npm run cypress:open`
+3. Click the `anyNumber.spec.js` to run the test
+4. You should see this error: `AssertionError: expected 404 to equal 200`
 
 Make it work:
 Leverage `apollo-server-express` to create a basic GraphQL server.
+- Docs: https://github.com/apollographql/apollo-server/tree/master/packages/apollo-server-express#express
