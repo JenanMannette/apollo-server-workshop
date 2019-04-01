@@ -4,6 +4,7 @@
   "description": "A workshop designed to walk you through the basic concepts of GraphQL using Apollo Server.",
   "main": "server.js",
   "scripts": {
+    "cypress:open": "cypress open",
     "dev": "nodemon server.js",
     "test": "test"
   },
