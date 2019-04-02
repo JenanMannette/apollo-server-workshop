@@ -1,7 +1,7 @@
 describe('Users', () => {
   it('can query a user by id', () => {
     const query = `{
-      users(id: 1) {
+      user(id: 1) {
         name
         email
       }
@@ -16,7 +16,7 @@ describe('Users', () => {
       expect(resp.status).to.eq(200);
       expect(resp.body).to.eql({
         data: {
-          users: {
+          user: {
             name: 'Leanne Graham',
             email: 'Sincere@april.biz',
           },

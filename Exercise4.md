@@ -11,6 +11,7 @@ Watch it fail:
 Make it work:
 - Find the `UsersAPI.js` file and implement the `getUser` method.
 - Open the `server.js` file and take note of the reference to `UsersAPI`.
-- You will need to implement a users query and associated resolver that leverages the `UsersAPI`.
+- You will need to add a `User` type to your schema
+- You will need to implement a `user` query and associated resolver that leverages the `UsersAPI`.
 
 Hint: the 3rd argument of a resolver function is an object that has a `dataSources` property.
