@@ -8,7 +8,7 @@ class UsersAPI extends RESTDataSource {
 
   async getUser(id) {
     // Hint: The route you want is /users/:id
-    const resp = await this.get('NOT IMPLEMENTED');
+    const resp = await this.get(`users/${id}`);
     console.log('resp', resp);
     return resp;
   }
