@@ -1,5 +1,7 @@
 # Setup
 
+Fork this repo into your own GitHub account.
+
 From the root directory:
 ```
 # Ensure you are on the correct version of node (10.15.1) and npm (6.8.0)
