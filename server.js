@@ -1,5 +1,6 @@
 const express = require('express');
 const { ApolloServer, gql } = require('apollo-server-express');
+const UsersAPI = require('./UsersAPI');
 
 const server = express();
 
@@ -31,6 +32,9 @@ const apolloServer = new ApolloServer({
       },
     },
   },
+  dataSources: () => ({
+    usersAPI: new UsersAPI(),
+  }),
 });
 apolloServer.applyMiddleware({ app: server });
 
