@@ -9,15 +9,26 @@ server.get('/health', (req, res) => {
 });
 
 // Exercise2 Solution
+// Exercise3 Solution
+let anyNumber = 'Threeve';
 const apolloServer = new ApolloServer({
   typeDefs: gql`
     type Query {
       anyNumber: String
     }
+    type Mutation {
+      setAnyNumber(value: String!): String!
+    }
   `,
   resolvers: {
     Query: {
-      anyNumber: () => 'Threeve',
+      anyNumber: () => anyNumber,
+    },
+    Mutation: {
+      setAnyNumber: (_, args) => {
+        anyNumber = args.value;
+        return anyNumber;
+      },
     },
   },
 });

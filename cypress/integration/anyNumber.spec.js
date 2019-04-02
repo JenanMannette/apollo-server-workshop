@@ -17,9 +17,7 @@ describe('Any Number', () => {
 
   it('can mutate any number', () => {
     const query = `mutation {
-      setAnyNumber(value: "V") {
-        anyNumber
-      }
+      setAnyNumber(value: "V")
     }`;
 
     cy.request({
@@ -29,7 +27,7 @@ describe('Any Number', () => {
       failOnStatusCode: false,
     }).then((resp) => {
       expect(resp.status).to.eq(200);
-      expect(resp.body).to.eql({ data: { anyNumber: 'V' } });
+      expect(resp.body).to.eql({ data: { setAnyNumber: 'V' } });
     });
   });
 });
