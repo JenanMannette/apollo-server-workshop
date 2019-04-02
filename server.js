@@ -16,14 +16,21 @@ const apolloServer = new ApolloServer({
   typeDefs: gql`
     type Query {
       anyNumber: String
+      user(id: Int!): User
     }
     type Mutation {
       setAnyNumber(value: String!): String!
+    }
+
+    type User {
+      name: String!
+      email: String!
     }
   `,
   resolvers: {
     Query: {
       anyNumber: () => anyNumber,
+      user: (_, args, { dataSources }) => dataSources.usersAPI.getUser(args.id),
     },
     Mutation: {
       setAnyNumber: (_, args) => {
