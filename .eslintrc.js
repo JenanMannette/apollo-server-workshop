@@ -1,5 +1,6 @@
 module.exports = {
   extends: ['airbnb'],
+  plugins: ['cypress'],
   rules: {
     'max-len': ['error', 150, 2, {
       ignoreUrls: true,
